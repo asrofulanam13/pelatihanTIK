@@ -1,21 +1,31 @@
 body {
-   background-color: #FFFFE0; 
-   font-family: Arial, sans-serif;
-   color: #191970;
+    background-color: #FFFFE0; /* Latar belakang kuning cerah */
+    font-family: Arial, sans-serif; /* Font bersih dan mudah dibaca */
+    color: #191970; /* Warna teks utama (biru gelap) */
+    margin: 0;
+    padding: 0;
 }
 
 .kartu-profil {
     width: 300px;
-    margin: 60px auto;
+    margin: 60px auto; /* Tengah secara horizontal, jarak 60px atas/bawah */
     padding: 20px;
-    background-color: white;
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center; 
+    background-color: #ffffff; /* Warna latar belakang putih */
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    text-align: center; /* Konten di tengah */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi halus saat hover */
 }
 
+.kartu-profil:hover {
+    transform: scale(1.03); /* Sedikit membesar saat disentuh */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas saat hover */
+}
 
 .kartu-profil img {
     width: 150px;
-    border-radius: 50%;
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar jadi lingkaran */
+    object-fit: cover; /* Mengisi kotak tanpa merusak rasio */
+    margin-bottom: 15px;
 }
